@@ -11,7 +11,7 @@ namespace SquareTest
             double R = 9;
             double expected = 254.469;
             Square.Square square = new Square.Square("Circle", new double[]{ R });
-            Assert.AreEqual(expected, square.S, 0.001, "Вычисление площади проведено не корректно");
+            Assert.AreEqual(expected, square.S, 0.001, "Area calculation not correct");
         }
 
         [TestMethod]
@@ -22,7 +22,7 @@ namespace SquareTest
             double z = 3;
             double expected = 2.904;
             Square.Square square = new Square.Square("triangle",new double[] { x, y, z });
-            Assert.AreEqual(expected, square.S, 0.001, "Вычисление площади проведено не корректно");
+            Assert.AreEqual(expected, square.S, 0.001, "Area calculation not correct");
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace SquareTest
             double expected = 1;
             string key = "rectangular";
             Square.Square square = new Square.Square("triangle", new double[] { x, y, z });
-            Assert.AreEqual(expected, square.othersResult[key], 0.00001, "Вычисление прямоугольности проведено не корректно");
+            Assert.AreEqual(expected, square.othersResult[key], 0.00001, "Rectangularity calculated incorrectly");
         }
 
         [TestMethod]
@@ -45,7 +45,7 @@ namespace SquareTest
             double expected = 0;
             string key = "rectangular";
             Square.Square square = new Square.Square("triangle", new double[] { x, y, z });
-            Assert.AreEqual(expected, square.othersResult[key], 0.00001, "Вычисление прямоугольности проведено не корректно");
+            Assert.AreEqual(expected, square.othersResult[key], 0.00001, "Rectangularity calculated incorrectly");
         }
     }
 }
